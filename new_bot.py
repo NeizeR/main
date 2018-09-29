@@ -10,7 +10,7 @@ def handle_text(message):
     elif message.text == "How are you?" or message.text == "How are u?":
         VeryUsefulBot.send_message(message.from_user.id, "I'm fine.")
     else:
-        VeryUsefulBot.send_message(message.from_user.id, "Sorry, I did catch what you've said.")
+        VeryUsefulBot.send_message(message.from_user.id, "Sorry, I didn't catch what you've said.")
 
 
 VeryUsefulBot.polling(none_stop=True, interval=0)
